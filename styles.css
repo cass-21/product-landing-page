@@ -1,0 +1,474 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+	font-family: "Nunito", serif;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Header Section */
+#header {
+	background-color: #fff;
+	padding: 2em 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#header-img {
+	padding-left: 1em;
+	width: 6em;
+}
+
+#nav-bar {
+	padding: 0 3em;
+	display: flex;
+	gap: 20px;
+}
+
+.nav-link {
+	color: #1c2b33;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 0 2.15em;
+	margin: 0;
+	transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #0056b3;
+	border-radius: 4px;
+}
+
+/* Main Content */
+main {
+	font-family: "Nunito", serif; /* Apply Nunito font family */
+	margin-top: 2em;
+	padding: 20px;
+}
+
+section {
+	margin: 40px 0;
+	padding: 30px;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	border: 2px solid #1b83eb69;
+}
+
+h2 {
+	color: #1b84eb;
+	font-size: 1.8rem;
+}
+
+/* Intro Section */
+#intro {
+	text-align: center;
+}
+
+.meta-intro {
+	background-image: url("https://media.targetoptical.com/2024/05-21-Supernova-phase-2/LP-colors-D.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #1c2b33;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	position: relative; /* Allow precise positioning */
+}
+
+.intro-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /* Align content to the left */
+	justify-content: flex-start; /* Align to the top of the section */
+	gap: 20px;
+	text-align: left; /* Align text to the left */
+}
+
+.meta-img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	max-width: 300px;
+	width: 220px;
+}
+
+#intro h1 {
+	width: 10em;
+	margin-top: 45px;
+	font-size: 2.4rem;
+	color: #1b84eb;
+	margin-bottom: 20px;
+}
+
+.intro-content p {
+	max-width: 700px;
+	width: 500px;
+	font-size: 1.5rem;
+	line-height: 1.8;
+	margin-top: 0;
+}
+
+/* Features section container styling */
+.meta-features {
+	background-color: #f1eff0;
+	padding: 40px;
+	margin: 20px 0;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	border: 2px solid #1b83eb69;
+}
+
+/* Main features heading - increased size for better prominence */
+.meta-features h2 {
+	text-align: center;
+	margin-bottom: 40px;
+	color: #333;
+	font-size: 2.5rem; /* Increased from previous size for more impact */
+	font-weight: 700; /* Added bold weight to emphasize section title */
+}
+
+/* Features list container */
+.meta-features-list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* Individual feature item layout */
+.feature-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+/* Icon sizing and positioning */
+.feature-icon {
+	width: 30px;
+	height: 30px;
+	object-fit: contain;
+	margin-top: 8px; /* Slightly increased to align with larger text */
+}
+
+/* Feature item heading - increased size for better readability */
+.feature-item h3 {
+	margin: 0 0 8px 0;
+	font-size: 1.5rem; /* Increased from 18px for better visibility */
+	color: #1b84eb;
+	font-weight: 600; /* Semi-bold weight for feature titles */
+}
+
+/* Feature description text - increased size for better readability */
+.feature-item p {
+	margin: 0;
+	font-size: 1.5rem; /* Increased from 16px for better readability */
+	line-height: 1.6;
+	color: #333;
+}
+
+/* Feature content container */
+.feature-content {
+	flex: 1;
+}
+
+.pricing-section {
+	background-color: #f1eff0;
+	padding: 40px 20px; /* Reduced padding from 60px to 40px */
+	margin: 0;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	border: 2px solid #1b83eb69;
+}
+
+.pricing-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	gap: 24px;
+	padding: 20px;
+	
+}
+
+.pricing-card {
+	border: 2px solid #7b7b7b69;
+	border-radius: 8px;
+	padding: 30px; /* Reduced padding from 30px to 20px */
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	/* Add max-height to ensure consistent card sizes */
+	max-height: 100%; /* Reduced from the previous implicit height */
+	height: auto;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-title {
+	width: calc(100% + 50px); /* Accounts for card padding */
+	padding: 15px; /* Reduced padding from 15px to 12px */
+	margin: -25px -25px 25px -25px; /* Adjusted margins to match new padding */
+	border-radius: 8px 8px 0 0;
+}
+
+.pricing-title h3 {
+	border: none;
+	padding: 0;
+	font-size: 1.58rem; /* Slightly reduced from 1.5rem */
+	font-weight: 400;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.pricing-title img {
+	width: 200px;
+	height: auto;
+	object-fit: contain;
+	border: 1px solid #9ac5f0;
+	border-radius: 60px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.price {
+	background-color: #197bdcc9;
+	font-size: 2.25rem; /* Slightly reduced from 2.5rem */
+	font-weight: 400;
+	color: #333333;
+	border: none;
+	border-radius: 5em;
+	padding: 0 .3em;
+	margin: 15px 20px; /* Reduced margin from 20px */
+	box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.features-list {
+	list-style: none;
+	padding: 0;
+	margin: 15px 0; /* Reduced from 20px */
+	width: 100%;
+	text-align: left;
+}
+
+.features-list li {
+	margin: 20px 0; /* Reduced from 12px */
+	color: #333;
+	font-size: 1rem; /* Slightly reduced from 1.1rem */
+	line-height: 1.4; /* Reduced from 1.5 */
+}
+
+.features-list li strong {
+	display: block; /* Put feature titles on their own line */
+	margin-bottom: 5px;
+	color: #1b84eb; /* Match the website's blue color */
+}
+
+.select-button {
+	background: #1b84eb; /* Changed to match website's blue */
+	color: white; /* Added for better contrast */
+	border: none;
+	padding: 10px 36px; /* Slightly reduced padding */
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 25px;
+	transition: background-color 0.3s ease;
+	border-radius: 4px; /* Added to match website's style */
+}
+
+.select-button:hover {
+	background: #0056d1; /* Darker blue for hover state */
+}
+
+/* Explore the World Section */
+section {
+		background-color: #F1EFF0;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1b84eb;
+  margin-bottom: 20px;
+}
+
+section iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #1b83eb69;
+}
+
+/* Responsive Styling for Video */
+@media (max-width: 768px) {
+  section iframe {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Contact Section */
+/* Center the entire section content */
+#contact {
+  display: flex; /* Enable Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9; /* Optional: Background color for visibility */
+  padding: 20px; /* Optional: Padding around the section */
+  text-align: center; /* Center text inside the section */
+}
+
+/* Styling for the subscribe box */
+.subscribe {
+  background-color: #fff; /* Background for the box */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for style */
+  max-width: 600px; /* Restrict max width for better responsiveness */
+  width: 100%; /* Ensure it spans full width within the max-width */
+}
+
+/* Title and copy styling */
+.subscribe__title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.subscribe__copy {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Form styling */
+.form {
+  display: flex; /* Flexbox for input and button */
+  flex-direction: column; /* Stack items vertically on small screens */
+  gap: 10px; /* Space between input and button */
+  align-items: center; /* Center input and button */
+}
+
+.form__email {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Limit the width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form__button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+.notice {
+	width: 345px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #333; /* Keep the dark background for contrast */
+  color: white; /* Maintain clear text contrast */
+  text-align: center; /* Center-align content */
+  padding: 15px 20px; /* Add padding for better spacing */
+  position: fixed; /* Use fixed positioning for consistent placement */
+  bottom: 0; /* Anchor footer to the bottom */
+  width: 100%; /* Full-width footer */
+  font-size: 1rem; /* Standard font size */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+footer p {
+  margin: 0; /* Eliminate extra space around text */
+  font-size: 0.9rem; /* Slightly smaller text for a cleaner look */
+  color: #bbb; /* Use softer contrast for less important text */
+  line-height: 1.5; /* Improve text readability */
+}
+
+
+/* Responsive Styling for Contact Section */
+@media (max-width: 768px) {
+  #contact {
+      padding: 20px;
+  }
+
+  #contact h2 {
+      font-size: 1.5rem;
+  }
+
+  #contact p {
+      font-size: 1rem;
+  }
+
+  #form {
+      gap: 10px;
+  }
+
+  #form button.btn-primary {
+      padding: 10px 20px;
+      font-size: 1rem;
+  }
+}
+
+
+
+/* Responsive Nav Bar */
+@media (max-width: 768px) {
+	.meta-img {
+		position: static; /* Allow the image to flow naturally */
+		margin: 0 auto; /* Center the image on small screens */
+		display: block;
+		max-width: 200px; /* Adjust size for mobile */
+	}
+
+	#intro h1 {
+		margin-top: 20px; /* Reduce space above the heading */
+		font-size: 1.8rem; /* Adjust font size */
+	}
+
+	.intro-content p {
+		font-size: 1rem; /* Slightly smaller text */
+		line-height: 1.6;
+	}
+}
+
+@media (max-width: 1200px) {
+	.pricing-container {
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+	}
+
+	.pricing-card {
+		max-width: 600px; /* Allow cards to be wider on mobile */
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
